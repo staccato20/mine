@@ -1,0 +1,10 @@
+<div class="container">
+    <a class="nav-link" href="{% url 'new' %}">일정 입력</a>
+    <br>
+    <h1>다이어리</h1>
+    <div class="outer">
+        <a class="btn btn-info left" href="{% url 'calendar' %}?{{ prev_month }}"><span>이전 달</span> </a>&nbsp 
+        <a class="btn btn-info right" href="{% url 'calendar' %}?{{ next_month }}"><span>다음 달</span> </a>
+    </div>
+    {{calendar}}
+</div>

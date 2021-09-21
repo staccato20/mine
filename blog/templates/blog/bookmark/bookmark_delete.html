@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookmark Delete</title>
+</head>
+<body>
+<span>Do you want to delete {{object}}?</span>
+<form action="" method = "post">
+    {% csrf_token %}
+    <input type="submit" value="삭제완료">
+</form>
+</body>
+</html>
